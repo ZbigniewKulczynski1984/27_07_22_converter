@@ -10,10 +10,10 @@ body {
 	align-items: center;
 	flex-direction: column;
 	position: relative;
-	height: 100vh;
+	height: 700px;
 	font-family: 'Open Sans', sans-serif;
-	color: #fff;
-	background-color: #1e1d23;
+	color: rgb(10, 10, 10);
+	background-color: #3417c5;
 	font-size: 24px;
 }
 
@@ -40,9 +40,9 @@ button {
 	margin: 20px;
 	cursor: pointer;
 	background: none;
-	color: #fff;
+	color: rgb(10, 10, 10);
 	font-size: 18px;
-	border: 3px solid #ddd;
+	border: 3px solid rgb(10, 10, 10);
 	border-radius: 8px;
 	transition: 0.3s;
 	text-transform: uppercase;
@@ -51,4 +51,9 @@ button {
 button:hover {
     background-color: #ddd;
 	color: #000;
+}
+
+footer p {
+    margin-top: 100px;
+    font-size: 12px;
 }
