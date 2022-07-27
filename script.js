@@ -13,9 +13,11 @@ const swap = () => {
     if(one.textContent === '°C') {
         one.textContent = '°F'
         two.textContent = '°C'
+        result.textContent = ''
     } else {
         one.textContent = '°C'
         two.textContent = '°F'
+        result.textContent = ''
     }
 }
 
@@ -33,14 +35,23 @@ const celToFahr = () => {
 
 const conversion = () => {
     if(converter.value !== '') {
-        console.log('k');
+        if(one.textContent === '°C') {
+            fahrToCel()
+        } else {
+            celToFahr()
+        }
     } else {
-        result.textContent = 'Musisz podać jakąś wartość!'
+        result.textContent = 'Musisz podać jakąś wartość!!!'
     }
+}
+
+const reset = () => {
+    converter.value = ''
+    result.textContent = ''
 }
 
 
 
 changeBtn.addEventListener('click', swap)
-
 convBtn.addEventListener('click', conversion)
+resetBtn.addEventListener('click', reset)
